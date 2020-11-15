@@ -9,12 +9,9 @@ int main(){
 	
 	if(k>=1 && k<=50 && n>=1 && n<=50 && k<=n){
 		int arr[n];  // array of each participant's score
-		int c=0;     // counter for array index
-	
-		while(n>0){
-			cin >> arr[c];
-			++c;
-			--n;
+		
+		for(int i=0; i<n; i++){ // get score of each participant
+			cin >> arr[i];
 		}
 		
 		int arr_size=sizeof(arr)/sizeof(arr[0]); // size of array
