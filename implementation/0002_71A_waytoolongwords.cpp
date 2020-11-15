@@ -3,25 +3,30 @@
 using namespace std;
 
 int main(){
-	int n;
-	string s;
+	int n;    // number of lines to be printed
+	string s; // input of strings
+	int len;  // length of each string
 	
-	cin >> n;
+	cin >> n; // get number of lines
 	
 	if(n>=1 && n<=100){
 		int c = n;
-		string inArr[n];
+		string inArr[n];   //
+		char first;        // first character of string
+		char last;         // last character of string
+		int mid;           // length of middle string
+		string midString;  // string format of int mid
 		
 		while(n>0){
-			cin >> s;
-			
-			int len = s.length();
+			cin >> s;         // get string		
+			len = s.length(); // length of current string
 			
 			if(len > 10){
-				char first = s.at(0);
-				char last = s.at(len-1);
-				int mid = len-2;
-				s = first + to_string(mid) + last;
+				first = s.at(0);          // get first character
+				last = s.at(len-1);       // get last character
+				mid = len-2;              // get length of middle string
+				midString = to_string(mid);    // convert mid to string
+				s = first + midString + last;  // combine
 			}
 			
 			inArr[c-n] = s;
