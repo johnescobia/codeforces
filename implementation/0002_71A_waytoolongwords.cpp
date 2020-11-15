@@ -3,15 +3,15 @@
 using namespace std;
 
 int main(){
-	int n;    // number of lines to be printed
+	int n;    // number of lines to be printed for string input
 	string s; // input of strings
 	int len;  // length of each string
 	
 	cin >> n; // get number of lines
 	
 	if(n>=1 && n<=100){
-		int c = n;
-		string inArr[n];   //
+		string arr[n];     // array of strings
+		int c = 0;         // index for inArr
 		char first;        // first character of string
 		char last;         // last character of string
 		int mid;           // length of middle string
@@ -29,18 +29,17 @@ int main(){
 				s = first + midString + last;  // combine
 			}
 			
-			inArr[c-n] = s;
-			--n;
+			arr[c] = s; // store string s
+			++c;        // increment c by 1
+			--n;        // decrement n by 1
 		}
 		
-		int i = 0;
+		size_t arrSize = sizeof(arr)/sizeof(arr[0]); // array size
 		
-		while(c>0){
-			cout << inArr[i] << endl;
-			++i;
-			--c;
+		for(size_t i = 0; i < arrSize; i++){ // print elements of arr
+			cout << arr[i] << endl;
 		}
-
 	}
+	
 	return 0;
 }
