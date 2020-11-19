@@ -19,8 +19,6 @@
  * 
  * Output:
  *    6
- * 
- * Link to question: https://codeforces.com/problemset/problem/116/A
  * */
 
 #include <iostream>
