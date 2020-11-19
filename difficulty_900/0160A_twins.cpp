@@ -28,10 +28,9 @@ using namespace std;
 int main(){
 	int n, coin, sum=0, remaining=0, count=0;
 	bool loop = true;
-	//~ vector<int> *val = new vector<int>();
+	vector<int>val;
 	
 	cin >> n;
-	vector<int>val(n);
 	
 	for(int i=0; i<n; i++)
 	{

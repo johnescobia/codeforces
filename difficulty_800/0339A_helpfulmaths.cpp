@@ -30,21 +30,19 @@ int main(){
 	
 	len = s.length(); // get length of input string
 	
-	if(len <=100){
-		vector<int> *arr = new vector<int>(); // dynamic integer vector
+	if(len <= 100){
+		vector<int>arr;
 		
-		ascendingNum(s, len, *arr);
+		ascendingNum(s, len, arr);
 		
-		int size = arr->size();
+		int size = arr.size();
 		
 		for(int i=0; i<size; i++){
-			cout << arr->at(i);
+			cout << arr.at(i);
 			
 			if(i<size-1)       // no plus sign after the last number
 				cout << "+";
 		}
-		
-		delete [] arr;            // free up memory of integer vector
 	}
 	
 	return 0;

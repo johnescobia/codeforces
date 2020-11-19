@@ -25,12 +25,12 @@ int main(){
 	cin >> n;
 	
 	if(n>=1 && n<=50){
-		vector<int> *v = new vector<int>();
+		vector<int>v(n);
 		char color[n];
 		int s=0; 
 
 		if(n==1){
-			v->push_back(s);
+			v.push_back(s);
 		}else{
 			for(int i=0; i<n; i++){
 			cin >> color[i];
@@ -40,10 +40,10 @@ int main(){
 					++s;
 					
 					if(i==n-1){
-						v->push_back(s);
+						v.push_back(s);
 					}
 				}else{
-					v->push_back(s);
+					v.push_back(s);
 					s=0;
 				}
 			}
@@ -52,7 +52,7 @@ int main(){
 				
 		int take=0;
 		
-		for(auto x : *v)
+		for(auto x : v)
 			take += x;
 			
 		cout << take;
