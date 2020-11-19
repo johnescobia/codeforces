@@ -44,7 +44,7 @@ int main(){
 				cout << "+";
 		}
 		
-		delete arr;            // free up memory of integer vector
+		delete [] arr;            // free up memory of integer vector
 	}
 	
 	return 0;
