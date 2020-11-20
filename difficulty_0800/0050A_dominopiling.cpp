@@ -1,12 +1,11 @@
 #include <iostream>
 #include <cmath>
-using namespace std;
 
 int main(){
 	int row;
 	int column;
 	
-	cin >> row >> column;
+	std::cin >> row >> column;
 	
 	if(row>=1 && row<=column && column<=16){
 		int squares = row*column;     // total squares in the board
@@ -16,7 +15,7 @@ int main(){
 		// square is uncovered
 		dominoes = floor(dominoes);
 		
-		cout << dominoes;   
+		std::cout << dominoes;   
 	}
 	
 	return 0;

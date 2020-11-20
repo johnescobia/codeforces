@@ -1,6 +1,5 @@
 #include <iostream>
 #include <set>
-using namespace std;
 
 /*VARIABLES
  * name = username
@@ -14,17 +13,17 @@ using namespace std;
  * */
 
 int main(){
-	string name;
-	cin >> name;
-	set<char> unique;
+	std::string name;
+	std::cin >> name;
+	std::set<char> unique;
 	
 	for(char x: name)
 		unique.insert(x);
 	
 	if(unique.size()%2==0)
-		cout << "CHAT WITH HER!";
+		std::cout << "CHAT WITH HER!";
 	else
-		cout << "IGNORE HIM!";
+		std::cout << "IGNORE HIM!";
 	
 	return 0;
 }

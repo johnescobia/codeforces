@@ -1,10 +1,9 @@
 #include <iostream>
-using namespace std;
 
 int main(){
 	int n, op;
 	
-	cin >> n >> op;
+	std::cin >> n >> op;
 	
 	while(op--){
 		if(n%10==0){
@@ -14,7 +13,7 @@ int main(){
 		}
 	}
 	
-	cout << n;
+	std::cout << n;
 	
 	return 0;
 }

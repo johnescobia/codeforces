@@ -20,12 +20,11 @@
  * */
  
 #include <iostream>
-using namespace std;
 
 int main(){
 	int weight1, weight2;
 	
-	cin >> weight1 >> weight2;
+	std::cin >> weight1 >> weight2;
 	
 	int year=0;
 	bool CONTINUE=true;
@@ -40,7 +39,7 @@ int main(){
 		}
 	}
 	
-	cout << year;
+	std::cout << year;
 
 	return 0;
 }

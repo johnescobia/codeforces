@@ -1,17 +1,16 @@
 #include <iostream>
-using namespace std;
 
 int main(){
 	int x=0;  // initial value of x is 0
 	int n;    // number of statements
 	
-	cin >> n;
+	std::cin >> n;
 	
 	if(n>=1 && n<=150){
-		string op;                        // name of operation
+		std::string op;                        // name of operation
 		
 		for(int i=0; i<n; i++){
-			cin >> op;
+			std::cin >> op;
 			
 			if(op=="++X" || op=="X++"){
 				++x;                      // increment x by 1
@@ -22,7 +21,7 @@ int main(){
 			}
 		}
 		
-		cout << x;
+		std::cout << x;
 	}
 	
 	return 0;

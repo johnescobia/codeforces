@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int main(){
 	int arr[5][5]; // 2D input array
@@ -9,7 +8,7 @@ int main(){
 	// get user 2D input
 	for(int i=0; i<5; i++){
 		for(int j=0; j<5; j++){
-			cin >> arr[i][j];
+			std::cin >> arr[i][j];
 			if(arr[i][j]==1){ // get index if value 1
 				x=j;
 				y=i;
@@ -23,7 +22,7 @@ int main(){
 	y = abs(y-2);
 	steps = x+y;
 	
-	cout << steps;
+	std::cout << steps;
 	
 	return 0;
 }

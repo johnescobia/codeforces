@@ -1,20 +1,19 @@
 #include <iostream>
 #include <algorithm>
-using namespace std;
 
 // string passed by reference
 // transform all characters to uppercase
-void toUpper(string &s){
+void toUpper(std::string &s){
 	for_each(s.begin(), s.end(), [](char & c){
 		c=::toupper(c);
 	});
 }
 
 int main(){
-	string s1, s2;   // input strings
+	std::string s1, s2;   // input strings
 	int len;         // length of string
 	
-	cin >> s1 >> s2; // get strings
+	std::cin >> s1 >> s2; // get strings
 	
 	len=s1.length(); // get length of string
 	
@@ -24,12 +23,12 @@ int main(){
 		
 		if(s1!=s2){     // if strings are not equal
 			if(s1<s2){
-				cout << "-1";
+				std::cout << "-1";
 			}else{
-				cout << "1";
+				std::cout << "1";
 			}
 		}else{          // if strings are equal
-			cout << "0";
+			std::cout << "0";
 		}
 	}
 	

@@ -3,14 +3,13 @@
  * */
 
 #include <iostream>
-using namespace std;
 
 int main()
 {
-	string s;
+	std::string s;
 	bool execute=false;
 	
-	cin >> s;
+	std::cin >> s;
 	
 	for(size_t i=0; i<s.size(); i++)
 	{
@@ -22,11 +21,11 @@ int main()
 	
 	if(execute==true)
 	{
-		cout << "YES";
+		std::cout << "YES";
 	}
 	else
 	{
-		cout << "NO";
+		std::cout << "NO";
 	}
 	
 	return 0;

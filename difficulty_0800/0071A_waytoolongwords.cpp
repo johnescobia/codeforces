@@ -1,31 +1,30 @@
 #include <iostream>
 #include <cstdlib>
-using namespace std;
 
 int main(){
 	int n;    // number of lines to be printed for string input
-	string s; // input of strings
+	std::string s; // input of strings
 	int len;  // length of each string
 	
-	cin >> n; // get number of lines
+	std::cin >> n; // get number of lines
 	
 	if(n>=1 && n<=100){
-		string arr[n];     // array of strings
+		std::string arr[n];     // array of strings
 		int c = 0;         // index for inArr
 		char first;        // first character of string
 		char last;         // last character of string
 		int mid;           // length of middle string
-		string midString;  // string format of int mid
+		std::string midString;  // string format of int mid
 		
 		while(n>0){
-			cin >> s;         // get string		
+			std::cin >> s;         // get string		
 			len = s.length(); // length of current string
 			
 			if(len > 10){
 				first = s.at(0);          // get first character
 				last = s.at(len-1);       // get last character
 				mid = len-2;              // get length of middle string
-				midString = to_string(mid);    // convert mid to string
+				midString = std::to_string(mid); // convert mid to string
 				s = first + midString + last;  // combine
 			}
 			
@@ -37,7 +36,7 @@ int main(){
 		size_t arrSize = sizeof(arr)/sizeof(arr[0]); // array size
 		
 		for(size_t i = 0; i < arrSize; i++){ // print elements of arr
-			cout << arr[i] << endl;
+			std::cout << arr[i] << std::endl;
 		}
 	}
 	

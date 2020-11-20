@@ -1,13 +1,12 @@
 // https://codeforces.com/problemset/problem/96/A
 #include <iostream>
-using namespace std;
 
 int main()
 {
-	string pos;
+	std::string pos;
 	int count=1, len;
 	
-	cin >> pos;
+	std::cin >> pos;
 	
 	char c = pos.at(0);
 	len = pos.length();
@@ -34,11 +33,11 @@ int main()
 	
 	if(count < 7)
 	{
-		cout << "NO";
+		std::cout << "NO";
 	}
 	else
 	{
-		cout << "YES";
+		std::cout << "YES";
 	}
 	
 	return 0;

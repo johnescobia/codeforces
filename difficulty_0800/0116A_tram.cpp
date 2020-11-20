@@ -22,15 +22,14 @@
  * */
 
 #include <iostream>
-using namespace std;
 
 int main(){
 	int stations, onboard=0, in, out, max=0;
 	
-	cin >> stations;
+	std::cin >> stations;
 	
 	while(stations--){
-		cin >> out >> in;	
+		std::cin >> out >> in;	
 		
 		onboard = onboard - out + in;
 		
@@ -39,7 +38,7 @@ int main(){
 		}
 	}
 
-	cout << max;
+	std::cout << max;
 		
 	return 0;
 }

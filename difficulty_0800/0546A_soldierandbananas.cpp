@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 /*VARIABLES
  * k = price of first banana
@@ -15,17 +14,17 @@ int main()
 {
 	int k, n, w, Sw;
 	
-	cin >> k >> n >> w;
+	std::cin >> k >> n >> w;
 	
 	Sw = (w*((2*k)+(w-1)*k))/2;
 	
 	if(n>=Sw)
 	{
-		cout << 0;
+		std::cout << 0;
 	}
 	else
 	{
-		cout << Sw-n;
+		std::cout << Sw-n;
 	}
 		
 	return 0;

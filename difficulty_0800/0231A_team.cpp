@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int main(){
 	int n=0;  // number of problems in the contest
@@ -7,7 +6,7 @@ int main(){
 	int v=0;  // Vasya's certainty
 	int t=0;  // Tonya's certainty
 	
-	cin >> n; // get number of problems
+	std::cin >> n; // get number of problems
 	
 	// if number of problems is equal to or more than 1 and less than or
 	// equal to 1000
@@ -17,7 +16,7 @@ int main(){
 		int total=0; // total certainty
 		
 		while(n>0){
-			cin >> p >> v >> t; // get each person's certainty
+			std::cin >> p >> v >> t; // get each person's certainty
 			total = p+v+t;      // get total certainty
 			
 			if(total>1){          // if more than 1 person is certain
@@ -39,7 +38,7 @@ int main(){
 			sum += arr[i];
 		}
 		
-		cout << sum; // print sum
+		std::cout << sum; // print sum
 		
 	}
 	

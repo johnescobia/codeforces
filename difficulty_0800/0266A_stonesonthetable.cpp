@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
 /* VARIABLES
  * n = number of stones on the board
@@ -22,10 +21,10 @@ using namespace std;
 int main(){
 	int n;
 
-	cin >> n;
+	std::cin >> n;
 	
 	if(n>=1 && n<=50){
-		vector<int>v(n);
+		std::vector<int>v(n);
 		char color[n];
 		int s=0; 
 
@@ -33,7 +32,7 @@ int main(){
 			v.push_back(s);
 		}else{
 			for(int i=0; i<n; i++){
-			cin >> color[i];
+			std::cin >> color[i];
 			
 			if(i>0){
 				if(color[i]==color[i-1]){
@@ -55,7 +54,7 @@ int main(){
 		for(auto x : v)
 			take += x;
 			
-		cout << take;
+		std::cout << take;
 	}
 	
 	return 0;

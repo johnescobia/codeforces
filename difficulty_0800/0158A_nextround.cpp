@@ -1,17 +1,16 @@
 #include <iostream>
-using namespace std;
 
 int main(){
 	int n=0; // number of participants
 	int k=0; // finisher's place to be compared with
 	
-	cin >> n >> k; // get n and k
+	std::cin >> n >> k; // get n and k
 	
 	if(k>=1 && k<=50 && n>=1 && n<=50 && k<=n){
 		int arr[n];  // array of each participant's score
 		
 		for(int i=0; i<n; i++){ // get score of each participant
-			cin >> arr[i];
+			std::cin >> arr[i];
 		}
 		
 		int kScore=arr[k-1];    // k-th place finisher's score
@@ -23,7 +22,7 @@ int main(){
 			}
 		}
 		
-		cout << qualified;
+		std::cout << qualified;
 	}
 	
 	return 0;

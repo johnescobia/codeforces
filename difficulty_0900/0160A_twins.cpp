@@ -23,18 +23,17 @@
 #include <vector>
 #include <algorithm>
 #include <numeric>
-using namespace std;
 
 int main(){
 	int n, coin, sum=0, remaining=0, count=0;
 	bool loop = true;
-	vector<int>val;
+	std::vector<int>val;
 	
-	cin >> n;
+	std::cin >> n;
 	
 	for(int i=0; i<n; i++)
 	{
-		cin >> coin;
+		std::cin >> coin;
 		val.push_back(coin);
 	}
 	
@@ -51,7 +50,7 @@ int main(){
 			loop = false;
 	}
 	
-	cout << count;
+	std::cout << count;
 	
 	return 0;
 }

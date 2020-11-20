@@ -2,19 +2,18 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-using namespace std;
 
 int main()
 {
 	int day, preVal, curVal, count=1;
-	vector<int>counts;
+	std::vector<int>counts;
 	
-	cin >> day;
-	cin >> preVal;
+	std::cin >> day;
+	std::cin >> preVal;
 	
 	for(int i=1; i<day; i++)
 	{
-		cin >> curVal;
+		std::cin >> curVal;
 		
 		if(curVal>=preVal)
 		{
@@ -31,7 +30,7 @@ int main()
 	
 	counts.push_back(count);
 	sort(counts.begin(), counts.end());
-	cout << counts.back();
+	std::cout << counts.back();
 	
 	return 0;
 }
