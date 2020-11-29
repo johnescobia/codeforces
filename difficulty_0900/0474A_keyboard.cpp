@@ -1,4 +1,4 @@
-/* Input 1: char --> direction of placement of kand on keyboard
+/* Input 1: char   --> direction of placement of hand on keyboard
  * Input 2: string --> input string
  * Output : string --> modified input 2 in accordance to input 1
  * 
