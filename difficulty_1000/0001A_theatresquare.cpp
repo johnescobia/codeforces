@@ -31,5 +31,5 @@ int main()
 		
 	std::cout << stonesNeeded;
 	
-	return 0;s
+	return 0;
 }
